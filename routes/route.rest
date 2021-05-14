@@ -1,0 +1,33 @@
+GET http://localhost:3000/subscribers
+
+
+###
+
+GET http://localhost:3000/subscribers/609e65dc6df271169c5d017b
+
+
+###
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+
+{
+    "name": "amazing ppl",
+    "subscribedToChannel" : "web"
+}
+
+
+###
+
+DELETE http://localhost:3000/subscribers/609e65dc6df271169c5d017b
+
+
+###
+
+
+PATCH http://localhost:3000/subscribers/609e65dc6df271169c5d017b
+Content-Type: application/json
+
+{
+    "name": "New Name"
+}
